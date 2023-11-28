@@ -46,7 +46,7 @@
               testid: 'my-apps-item'
             }, {
               label: 'MyCerts',
-              routerLink: 'mycerts',
+              routerLink: 'MyCerts',
               testid: 'mycerts'
             }, {
               label: helpText.userDropdown.logout,
