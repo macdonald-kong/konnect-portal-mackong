@@ -1,3 +1,7 @@
 .products-top-section {
     height: 500px;
 }
+
+#site-header {
+    border-bottom: 0px !important;
+}
