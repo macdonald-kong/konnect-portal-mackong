@@ -1,13 +1,9 @@
 <template>
   <Content>
-    <section
-      class="not-found d-flex flex-column justify-content-center align-items-center"
-      data-testid="getstarted"
-    >
-      <div class="d-flex align-items-left">
-        We want the developer onboarding process to be straightforward and transparent. Whether you're a seasoned open banking veteran or doing this for the first time, follow the steps outlined here to get started using our APIs.
-      </div>
-    </section>
+    <header class="mb-6">
+      <h1 class="m-0 type-xl color-text_colors-headings">Get Started</h1>
+    </header>
+    <p>We want the developer onboarding process to be straightforward and transparent. Whether you're a seasoned open banking veteran or doing this for the first time, follow the steps outlined here to get started using our APIs.</p>
   </Content>
 </template>
 

@@ -5,6 +5,12 @@
       <h1 class="m-0 type-xl color-text_colors-headings">My Certs</h1>
     </header>
 
+    <KLabel for="username">username</KLabel>
+    <KInput id="username" type="text" placeholder="Username" />
+
+    <KLabel for="custom-id">custom_id</KLabel>
+    <KInput id="custom-id" type="text" placeholder="Custom ID" />
+
   </Content>
 </template>
 
