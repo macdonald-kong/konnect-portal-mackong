@@ -175,6 +175,22 @@ export const portalRouter = () => {
             component: () => import('../views/Forbidden.vue')
           },
           {
+            path: '/gettingstarted',
+            name: 'GettingStarted',
+            meta: {
+              name: helpText.notFoundTitle
+            },
+            component: () => import('../views/GettingStarted.vue')
+          },
+          {
+            path: '/documentation',
+            name: 'Documentation',
+            meta: {
+              name: helpText.notFoundTitle
+            },
+            component: () => import('../views/Documentation.vue')
+          },
+          {
             path: '/:pathMatch(.*)*',
             name: 'not-found-redirect',
             meta: {

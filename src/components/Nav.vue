@@ -20,6 +20,22 @@
           <div class="background-color-wrapper" />
           {{ helpText.nav.catalog }}
         </router-link>
+        <router-link
+          data-testid="getting-started"
+          :to="{ name: 'GettingStarted' }"
+          class="mr-2 p-2 catalog-link"
+        >
+          <div class="background-color-wrapper" />
+          Getting Started
+        </router-link>
+        <router-link
+          data-testid="documentation"
+          :to="{ name: 'Documentation' }"
+          class="mr-2 p-2 catalog-link"
+        >
+          <div class="background-color-wrapper" />
+          Documentation
+        </router-link>
         <NavDropdown
           v-if="developer && !isPublic"
           :label="developer.email"
