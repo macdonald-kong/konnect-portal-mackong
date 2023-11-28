@@ -8,7 +8,7 @@
       <div class="circle d-flex align-items-center justify-content-center">
         Documentation
       </div>
-
+    </section>
   </Content>
 </template>
 

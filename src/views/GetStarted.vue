@@ -4,11 +4,10 @@
       class="not-found d-flex flex-column justify-content-center align-items-center"
       data-testid="getstarted"
     >
-
       <div class="circle d-flex align-items-center justify-content-center">
         Getting Started Guide
       </div>
-
+    </section>
   </Content>
 </template>
 
