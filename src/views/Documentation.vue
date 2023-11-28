@@ -2,10 +2,23 @@
   <Content>
     <KTabs :tabs="tabs">
       <template v-slot:tab1>
-        <p>Tab 1 content</p>
+        <h1>Authorization</h1>
+        <p>The authorization server exposes Openid-configuration (well known configuration) which provides configuration information about the Identity provider (IDP).</p>
+        <p>Read more about Openid-configuration here.</p>
+        <p>Íslandsbanki's Openid-configuration</p>
       </template>
       <template v-slot:tab2>
-        <p>Tab 2 content</p>
+        <h1>Cards API guide</h1>
+        <p>This guide explains how to consume the Cards API with OAuth2 authorization flow.</p>
+      </template>
+      <template v-slot:tab3>
+        <p>Tab 3 content</p>
+      </template>
+      <template v-slot:tab4>
+        <p>Tab 4 content</p>
+      </template>
+      <template v-slot:tab5>
+        <p>Tab 5 content</p>
       </template>
     </KTabs>
   </Content>
@@ -26,11 +39,23 @@ export default defineComponent({
     const tabs = [
       {
         hash: '#tab1',
-        title: 'Tab 1'
+        title: 'Authorization'
       },
       {
         hash: '#tab2',
-        title: 'Tab 2'
+        title: 'Cards'
+      },
+      {
+        hash: '#tab3',
+        title: 'Accounts'
+      },
+      {
+        hash: '#tab4',
+        title: 'Payments'
+      },
+      {
+        hash: '#tab5',
+        title: 'Test Data'
       }
     ]
 
