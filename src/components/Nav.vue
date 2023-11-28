@@ -21,12 +21,12 @@
           {{ helpText.nav.catalog }}
         </router-link>
         <router-link
-          data-testid="getting-started"
-          :to="{ name: 'GettingStarted' }"
+          data-testid="get-started"
+          :to="{ name: 'GetStarted' }"
           class="mr-2 p-2 catalog-link"
         >
           <div class="background-color-wrapper" />
-          Getting Started
+          Get Started
         </router-link>
         <router-link
           data-testid="documentation"

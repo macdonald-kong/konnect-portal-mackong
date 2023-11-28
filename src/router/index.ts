@@ -175,12 +175,12 @@ export const portalRouter = () => {
             component: () => import('../views/Forbidden.vue')
           },
           {
-            path: '/gettingstarted',
-            name: 'GettingStarted',
+            path: '/getstarted',
+            name: 'GetStarted',
             meta: {
               name: helpText.notFoundTitle
             },
-            component: () => import('../views/GettingStarted.vue')
+            component: () => import('../views/GetStarted.vue')
           },
           {
             path: '/documentation',
