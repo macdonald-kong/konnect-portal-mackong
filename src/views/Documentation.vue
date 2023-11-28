@@ -5,7 +5,7 @@
     </header>
     <KTabs :tabs="tabs">
       <template v-slot:tab1>
-        <header class="mb-6">
+        <header class="mb-6 mt-4">
           <h1 class="m-0 type-xl color-text_colors-headings">Authorization</h1>
         </header>
         <p>The authorization server exposes Openid-configuration (well known configuration) which provides configuration information about the Identity provider (IDP).</p>
@@ -13,17 +13,28 @@
         <p>Íslandsbanki's Openid-configuration</p>
       </template>
       <template v-slot:tab2>
-        <h1 class="m-0 type-xl color-text_colors-headings">Cards API Guide</h1>
+        <header class="mb-6 mt-4">
+          <h1 class="m-0 type-xl color-text_colors-headings">Cards API Guide</h1>
+        </header>
         <p>This guide explains how to consume the Cards API with OAuth2 authorization flow.</p>
       </template>
       <template v-slot:tab3>
-        <p>Tab 3 content</p>
+        <header class="mb-6 mt-4">
+          <h1 class="m-0 type-xl color-text_colors-headings">Accounts API guide</h1>
+        </header>
+        <p>This guide explains how to consume the Accounts API with OAuth2 authorization flow.</p>
       </template>
       <template v-slot:tab4>
-        <p>Tab 4 content</p>
+        <header class="mb-6 mt-4">
+          <h1 class="m-0 type-xl color-text_colors-headings">Payments API guide</h1>
+        </header>
+        <p>This guide explains how to initiate payment.</p>
       </template>
       <template v-slot:tab5>
-        <p>Tab 5 content</p>
+        <header class="mb-6 mt-4">
+          <h1 class="m-0 type-xl color-text_colors-headings">Test data for sandbox environment</h1>
+        </header>
+        <p>The following test data is available for sandbox interaction.</p>
       </template>
     </KTabs>
   </Content>

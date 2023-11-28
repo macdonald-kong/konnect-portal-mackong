@@ -1,7 +1,9 @@
 <template>
   <Content>
 
-
+    <header class="mb-6">
+      <h1 class="m-0 type-xl color-text_colors-headings">My Certs</h1>
+    </header>
 
   </Content>
 </template>
