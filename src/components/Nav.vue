@@ -13,20 +13,20 @@
       </router-link>
       <nav class="flex items-center links">
         <router-link
-          data-testid="catalog-link"
-          :to="{ name: 'catalog' }"
-          class="mr-2 p-2 catalog-link"
-        >
-          <div class="background-color-wrapper" />
-          {{ helpText.nav.catalog }}
-        </router-link>
-        <router-link
           data-testid="get-started"
           :to="{ name: 'GetStarted' }"
           class="mr-2 p-2 catalog-link"
         >
           <div class="background-color-wrapper" />
           Get Started
+        </router-link>
+        <router-link
+          data-testid="catalog-link"
+          :to="{ name: 'catalog' }"
+          class="mr-2 p-2 catalog-link"
+        >
+          <div class="background-color-wrapper" />
+          API Catalog
         </router-link>
         <router-link
           data-testid="documentation"

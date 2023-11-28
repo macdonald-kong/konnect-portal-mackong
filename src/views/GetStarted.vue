@@ -4,8 +4,8 @@
       class="not-found d-flex flex-column justify-content-center align-items-center"
       data-testid="getstarted"
     >
-      <div class="circle d-flex align-items-center justify-content-center">
-        Getting Started Guide
+      <div class="d-flex align-items-left">
+        We want the developer onboarding process to be straightforward and transparent. Whether you're a seasoned open banking veteran or doing this for the first time, follow the steps outlined here to get started using our APIs.
       </div>
     </section>
   </Content>
