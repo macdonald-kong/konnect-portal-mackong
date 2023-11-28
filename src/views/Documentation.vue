@@ -1,14 +1,13 @@
 <template>
   <Content>
-    <section
-      class="not-found d-flex flex-column justify-content-center align-items-center"
-      data-testid="documentation"
-    >
-
-      <div class="circle d-flex align-items-center justify-content-center">
-        Documentation
-      </div>
-    </section>
+    <KTabs :tabs="tabs">
+      <template v-slot:tab1>
+        <p>Tab 1 content</p>
+      </template>
+      <template v-slot:tab2>
+        <p>Tab 2 content</p>
+      </template>
+    </KTabs>
   </Content>
 </template>
 

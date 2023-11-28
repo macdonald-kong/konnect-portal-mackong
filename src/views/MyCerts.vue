@@ -1,35 +1,8 @@
 <template>
   <Content>
-    <PageTitle
-      class="mb-6"
-    >
-      <template #right>
-        <KButton
-          data-testid="create-application-button"
-          appearance="primary"
-          :is-rounded="false"
-          :to="{ name: 'create-application' }"
-        >
-          <svg
-            width="16"
-            height="16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mr-2"
-          >
-            <title>My Certs</title>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M16 8A8 8 0 110 8a8 8 0 0116 0zM7 5a1 1 0 012 0v2h2a1 1 0 110 2H9v2a1 1 0 11-2 0V9H5a1 1 0 110-2h2V5z"
-              fill="#fff"
-              fill-opacity=".75"
-            />
-          </svg>
-          New Cert
-        </KButton>
-      </template>
-    </PageTitle>
+
+
+
   </Content>
 </template>
 
