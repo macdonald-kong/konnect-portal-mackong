@@ -1,14 +1,15 @@
 <template>
   <Content>
+  <span class="title mb-5">Documentation</span>
     <KTabs :tabs="tabs">
       <template v-slot:tab1>
-        <h1>Authorization</h1>
+        <span class="title mb-5">Authorization</span>
         <p>The authorization server exposes Openid-configuration (well known configuration) which provides configuration information about the Identity provider (IDP).</p>
         <p>Read more about Openid-configuration here.</p>
         <p>Íslandsbanki's Openid-configuration</p>
       </template>
       <template v-slot:tab2>
-        <h1>Cards API guide</h1>
+        <span class="title mb-5">Cards API Guide</span>
         <p>This guide explains how to consume the Cards API with OAuth2 authorization flow.</p>
       </template>
       <template v-slot:tab3>
