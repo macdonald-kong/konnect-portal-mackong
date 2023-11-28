@@ -1,9 +1,11 @@
 <template>
   <Content>
-  <span class="title mb-5">Documentation</span>
+    <header class="mb-6">
+      <span class="title mb-5" title="Documentation">Documentation</span>
+    </header>
     <KTabs :tabs="tabs">
       <template v-slot:tab1>
-        <span class="title mb-5">Authorization</span>
+        <span class="title mb-5" title="Authorization">Authorization</span>
         <p>The authorization server exposes Openid-configuration (well known configuration) which provides configuration information about the Identity provider (IDP).</p>
         <p>Read more about Openid-configuration here.</p>
         <p>Íslandsbanki's Openid-configuration</p>
