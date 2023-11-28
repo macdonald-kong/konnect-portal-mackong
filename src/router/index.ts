@@ -183,6 +183,14 @@ export const portalRouter = () => {
             component: () => import('../views/GetStarted.vue')
           },
           {
+            path: '/mycerts',
+            name: 'MyCerts',
+            meta: {
+              name: helpText.notFoundTitle
+            },
+            component: () => import('../views/MyCerts.vue')
+          },
+          {
             path: '/documentation',
             name: 'Documentation',
             meta: {

@@ -26,7 +26,7 @@
           class="mr-2 p-2 catalog-link"
         >
           <div class="background-color-wrapper" />
-          API Catalog
+          {{ helpText.nav.catalog }}
         </router-link>
         <router-link
           data-testid="documentation"
@@ -44,6 +44,10 @@
               label: helpText.userDropdown.myApps,
               routerLink: 'my-apps',
               testid: 'my-apps-item'
+            }, {
+              label: 'MyCerts',
+              routerLink: 'mycerts',
+              testid: 'mycerts'
             }, {
               label: helpText.userDropdown.logout,
               onClick: () => logout(),
