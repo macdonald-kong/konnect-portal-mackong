@@ -23,10 +23,21 @@ export default defineComponent({
 
     const logoSrc = portalApiV2.value.getApiLink('/api/v2/portal/logo')
     const helpText = useI18nStore().state.helpText.notFound
+    const tabs = [
+      {
+        hash: '#tab1',
+        title: 'Tab 1'
+      },
+      {
+        hash: '#tab2',
+        title: 'Tab 2'
+      }
+    ]
 
     return {
       logoSrc,
-      helpText
+      helpText,
+      tabs
     }
   }
 })
