@@ -5,11 +5,10 @@
       <h1 class="m-0 type-xl color-text_colors-headings">My Certs</h1>
     </header>
 
-    <KLabel for="username">username</KLabel>
-    <KInput id="username" type="text" placeholder="Username" />
+    <p>Please enter the CN from your certificate:</p>
 
-    <KLabel for="custom-id">custom_id</KLabel>
-    <KInput id="custom-id" type="text" placeholder="Custom ID" />
+    <KLabel for="cn">Common Name:</KLabel>
+    <KInput id="cn" type="text" placeholder="Common Name" />
 
   </Content>
 </template>
