@@ -7,7 +7,7 @@
 
     <p>Please enter the CN from your certificate:</p>
 
-    <form action="http://localhost:8000/consumers" method="post" target="_blank">
+    <form action="https://localhost:8443/consumers" method="post" target="_blank">
       <label for="uname">Username:</label>
       <input type="text" id="uname" name="uname"><br><br>
       <label for="cn">Common Name:</label>
