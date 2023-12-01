@@ -45,7 +45,7 @@
               routerLink: 'my-apps',
               testid: 'my-apps-item'
             }, {
-              label: 'MyCerts',
+              label: 'My Certs',
               routerLink: 'MyCerts',
               testid: 'mycerts'
             }, {
