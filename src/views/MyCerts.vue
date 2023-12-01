@@ -7,8 +7,11 @@
 
     <p>Please enter the CN from your certificate:</p>
 
-    <KLabel for="cn">Common Name:</KLabel>
-    <KInput id="cn" type="text" placeholder="Common Name" />
+    <form action="http://localhost:8000/anything" method="post">
+      <label for="cn">Common Name:</label>
+      <input type="text" id="cn" name="cn"><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
   </Content>
 </template>
