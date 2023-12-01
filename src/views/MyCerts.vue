@@ -8,6 +8,8 @@
     <p>Please enter the CN from your certificate:</p>
 
     <form action="http://localhost:8000/anything" method="post">
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="uname"><br><br>
       <label for="cn">Common Name:</label>
       <input type="text" id="cn" name="cn"><br><br>
       <input type="submit" value="Submit">
