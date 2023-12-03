@@ -7,12 +7,7 @@
 
     <KCard title="Manage Certificates">
       <template v-slot:body>
-        <KTable
-          :fetcher="fetcher"
-          :headers="headers"
-          :sortHandlerFn="sortHandlerFn"
-          enable-client-sort
-        />
+        <KTable :fetcher="fetcher" :headers="headers" :hasSideBorder="true" />
       </template>
     </KCard>
     
@@ -54,8 +49,12 @@ export default defineComponent({
       helpText
     }
   }
-},
-data () {
+})
+</script>
+
+<script lang="ts">
+export default {
+  data () {
     return {
       headers: [
         { label: 'Host', key: 'hostname', sortable: true },
@@ -133,7 +132,8 @@ data () {
         ]
       }
     },
-  })
+  }
+}
 </script>
 
 <style lang="scss" scoped>
