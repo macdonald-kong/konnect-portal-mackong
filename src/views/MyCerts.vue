@@ -10,9 +10,9 @@
     <form action="https://localhost:8443/consumers" method="post" target="_blank">
       <KLabel for="uname">Username:</KLabel>
       <KInput id="uname" name="uname"/><br><br>
-      <label for="cn">Common Name:</label>
-      <input type="text" id="cn" name="cn"/><br><br>
-      <input type="submit" value="Submit"/>
+      <KLabel for="cn">Common Name:</KLabel>
+      <KInput id="cn" name="cn"/><br><br>
+      <KButton appearance="primary" type="submit">Submit</KButton>
     </form>
 
   </Content>
