@@ -80,7 +80,7 @@ export default defineComponent({
           },
           {
             id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: 'example-cn',
+            cn: 'example-cn',
           },
         ]
       }
