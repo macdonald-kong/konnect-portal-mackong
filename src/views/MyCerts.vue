@@ -1,19 +1,26 @@
 <template>
   <Content>
 
-    <header class="mb-6">
-      <h1 class="m-0 type-xl color-text_colors-headings">My Certs</h1>
-    </header>
+  <KCard title="Manage Certificates">
+    <template v-slot:body>
+      I am the body.
+    </template>
+  </KCard>
 
-    <p>Please enter the CN from your certificate:</p>
+  <KCard title="Add New Certificate">
+    <template v-slot:body>
+      <p>Please enter your certificates details:</p>
+      <form action="https://localhost:8443/consumers" method="post" target="_blank">
+        <KLabel for="uname">Username:</KLabel>
+        <KInput id="uname" name="uname"/>
+        <KLabel for="cn">Common Name:</KLabel>
+        <KInput id="cn" name="cn"/>
+        <KButton appearance="primary" type="submit">Submit</KButton>
+      </form>
+    </template>
+  </KCard>
 
-    <form action="https://localhost:8443/consumers" method="post" target="_blank">
-      <KLabel for="uname">Username:</KLabel>
-      <KInput id="uname" name="uname"/><br><br>
-      <KLabel for="cn">Common Name:</KLabel>
-      <KInput id="cn" name="cn"/><br><br>
-      <KButton appearance="primary" type="submit">Submit</KButton>
-    </form>
+
 
   </Content>
 </template>
