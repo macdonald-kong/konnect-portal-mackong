@@ -31,22 +31,58 @@
   </Content>
 </template>
 
-<script lang="ts">
+script lang="ts">
 import { defineComponent } from 'vue'
 import usePortalApi from '@/hooks/usePortalApi'
 import { useI18nStore } from '@/stores'
 
 export default defineComponent({
   name: 'MyCerts',
-  setup () {
+  setup() {
     const { portalApiV2 } = usePortalApi()
 
     const logoSrc = portalApiV2.value.getApiLink('/api/v2/portal/logo')
     const helpText = useI18nStore().state.helpText.notFound
 
+    const headers = [
+      { label: 'Host', key: 'hostname', sortable: true },
+      { label: 'Version', key: 'version', sortable: true },
+      { label: 'Connected', key: 'connected', sortable: true },
+      { label: 'Last Seen', key: 'last_seen', sortable: true, useSortHandlerFn: true }
+    ]
+
+    const sortHandlerFn = ({ key, sortColumnOrder, data }) => {
+      return data.sort((a, b) => {
+        if (key === 'last_seen') {
+          if (sortColumnOrder === 'asc') {
+            if (a.last_ping > b.last_ping) {
+              return 1
+            } else if (a.last_ping < b.last_ping) {
+              return -1
+            }
+            return 0
+          } else {
+            if (a.last_ping > b.last_ping) {
+              return -1
+            } else if (a.last_ping < b.last_ping) {
+              return 1
+            }
+            return 0
+          }
+        }
+      })
+    }
+
+    const fetcher = () => {
+      // Your fetcher logic here
+    }
+
     return {
       logoSrc,
-      helpText
+      helpText,
+      headers,
+      sortHandlerFn,
+      fetcher
     }
   }
 })
