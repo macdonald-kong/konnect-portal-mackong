@@ -11,18 +11,18 @@
       </template>
     </KCard>
     
-    </br></br>
+    <br/><br/>
     
     <KCard title="Add New Certificate">
       <template v-slot:body>
         <p>Please enter your certificates details:</p>
-        </br></br>
+        <br/><br/>
         <form action="https://localhost:8443/consumers" method="post" target="_blank">
           <KLabel for="uname">Username:</KLabel>
           <KInput id="uname" name="uname"/>
           <KLabel for="cn">Common Name:</KLabel>
           <KInput id="cn" name="cn"/>
-          </br></br>
+          <br/><br/>
           <KButton appearance="primary" type="submit">Submit</KButton>
         </form>
       </template>
