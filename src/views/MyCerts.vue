@@ -31,7 +31,7 @@
   </Content>
 </template>
 
-script lang="ts">
+<script lang="ts">
 import { defineComponent } from 'vue'
 import usePortalApi from '@/hooks/usePortalApi'
 import { useI18nStore } from '@/stores'
@@ -86,90 +86,6 @@ export default defineComponent({
     }
   }
 })
-</script>
-
-<script lang="ts">
-export default {
-  data () {
-    return {
-      headers: [
-        { label: 'Host', key: 'hostname', sortable: true },
-        { label: 'Version', key: 'version', sortable: true },
-        { label: 'Connected', key: 'connected', sortable: true },
-        { label: 'Last Seen', key: 'last_seen', sortable: true, useSortHandlerFn: true }
-      ],
-    }
-  },
-  methods: {
-    sortHandlerFn({ key, prevKey, sortColumnOrder, data}) {
-      return data.sort((a, b) => {
-        if (key === 'last_seen') {
-          if (sortColumnOrder === 'asc') {
-            if (a.last_ping > b.last_ping) {
-              return 1
-            } else if (a.last_ping < b.last_ping) {
-              return -1
-            }
-            return 0
-          } else {
-            if (a.last_ping > b.last_ping) {
-              return -1
-            } else if (a.last_ping < b.last_ping) {
-              return 1
-            }
-            return 0
-          }
-        }
-      })
-    },
-    fetcher() {
-      return {
-        data: [
-          {
-            id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: '2.8.0.0-enterprise-edition',
-            hostname: '99e591ae3776',
-            last_ping: 1648855072,
-            connected: 'Disconnected',
-            last_seen: '6 days ago'
-          },
-          {
-            id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: '2.7.0.0-enterprise-edition',
-            hostname: '19e591ae3776',
-            last_ping: 1649362660,
-            connected: 'Connected',
-            last_seen: '3 hours ago',
-          },
-          {
-            id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: '2.8.1.0-enterprise-edition',
-            hostname: '79e591ae3776',
-            last_ping: 1649355460,
-            connected: 'Connected',
-            last_seen: '5 hours ago',
-          },
-          {
-            id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: '2.6.0.0-enterprise-edition',
-            hostname: '89e591ae3776',
-            last_ping: 1648155072,
-            connected: 'Disconnected',
-            last_seen: '14 days ago'
-          },
-          {
-            id: '08cc7d81-a9d8-4ae1-a42f-8d4e5a919d07',
-            version: '2.8.2.0-enterprise-edition',
-            hostname: '59e591ae3776',
-            last_ping: 1649855072,
-            connected: 'Connected',
-            last_seen: 'Just now'
-          },
-        ]
-      }
-    },
-  }
-}
 </script>
 
 <style lang="scss" scoped>
