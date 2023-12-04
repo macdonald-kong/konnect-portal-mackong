@@ -15,13 +15,10 @@
     
     <KCard title="Add New Certificate">
       <template v-slot:body>
-        <p>Please enter your certificates details:</p>
-        <br/>
         <form action="https://localhost:8443/consumers" method="post" target="_blank">
-          <KInput id="uname" name="uname" model-value="hr@example.com" read-only/>
-          <KLabel for="cn">Common Name:</KLabel>
-          <KInput id="cn" name="cn"/>
-          <KSelect id="product" name="product" label="Choose an API Product:" :items="[{
+          <KInput label="Username:"id="uname" name="uname" model-value="hr@example.com" type="hidden"/>
+          <KInput label="Common Name:" id="cn" name="cn" required/>
+          <KSelect label="Choose an API Product:" id="product" name="product" :items="[{
               label: 'ATMs',
               value: 'atms'
             }, {
