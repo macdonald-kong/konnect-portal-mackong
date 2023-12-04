@@ -6,7 +6,11 @@
     border-bottom: 0px !important;
 }
 
-#products-welcome {
+.products-welcome {
     color: white !important;
+    font-family: ttnorms, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.products-title {
     font-family: ttnorms, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
