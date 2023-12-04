@@ -21,6 +21,20 @@
           <KInput type="hidden" id="uname" name="uname">hr@example.com</KINput>
           <KLabel for="cn">Common Name:</KLabel>
           <KInput id="cn" name="cn"/>
+          <KSelect label="Choose an API Product:" :items="[{
+              label: 'ATMs',
+              value: 'atms'
+            }, {
+              label: 'Branches',
+              value: 'branches'
+            }, {
+              label: 'Products',
+              value: 'products'
+            }, {
+              label: 'Headers',
+              value: 'headers'
+            }]"
+          />
           <br/>
           <KButton appearance="primary" type="submit">Submit</KButton>
         </form>
