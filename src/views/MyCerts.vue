@@ -21,7 +21,7 @@
           <KInput type="hidden" id="uname" name="uname">hr@example.com</KInput>
           <KLabel for="cn">Common Name:</KLabel>
           <KInput id="cn" name="cn"/>
-          <KSelect label="Choose an API Product:" :items="[{
+          <KSelect id="product" name="product" label="Choose an API Product:" :items="[{
               label: 'ATMs',
               value: 'atms'
             }, {
