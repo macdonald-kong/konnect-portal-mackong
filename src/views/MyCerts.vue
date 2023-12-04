@@ -16,7 +16,7 @@
     <KCard title="Add New Certificate">
       <template v-slot:body>
         <form action="https://localhost:8443/consumers" method="post" target="_blank">
-          <KInput label="Username:"id="uname" name="uname" model-value="hr@example.com" type="hidden"/>
+          <KInput label="Username:" id="uname" name="uname" model-value="hr@example.com" type="hidden"/>
           <KInput label="Common Name:" id="cn" name="cn" required/>
           <KSelect label="Choose an API Product:" id="product" name="product" :items="[{
               label: 'ATMs',
