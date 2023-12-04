@@ -7,5 +7,6 @@
 }
 
 #products-welcome {
-    color: white;
+    color: white !important;
+    font-family: ttnorms, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
