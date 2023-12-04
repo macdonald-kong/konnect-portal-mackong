@@ -18,7 +18,7 @@
         <p>Please enter your certificates details:</p>
         <br/>
         <form action="https://localhost:8443/consumers" method="post" target="_blank">
-          <KInput type="hidden" id="uname" name="uname">hr@example.com</KInput>
+          <KInput id="uname" name="uname :label="developer.email"></KInput>
           <KLabel for="cn">Common Name:</KLabel>
           <KInput id="cn" name="cn"/>
           <KSelect id="product" name="product" label="Choose an API Product:" :items="[{
